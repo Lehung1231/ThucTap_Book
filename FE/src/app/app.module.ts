@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/Client/footer/footer.component';
 import { HeaderComponent } from './shared/Client/header/header.component';
+import { ListProductComponent } from './components/list-product/list-product.component';
+import { HomeComponent } from './pages/Client/home/home.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 @NgModule({
@@ -12,6 +15,9 @@ import { HeaderComponent } from './shared/Client/header/header.component';
     AppComponent,
     FooterComponent,
     HeaderComponent,
+    ListProductComponent,
+    HomeComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,
