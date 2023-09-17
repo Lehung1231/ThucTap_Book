@@ -1,3 +1,4 @@
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FooterComponent } from './shared/Client/footer/footer.component';
@@ -14,6 +15,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
+  },
+  {
+    path : 'detail',
+    component : ProductDetailComponent,
   },
   {
     path : 'footer',

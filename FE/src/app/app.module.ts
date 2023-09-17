@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/Client/header/header.component';
 import { ListProductComponent } from './components/list-product/list-product.component';
 import { HomeComponent } from './pages/Client/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { BannerComponent } from './components/banner/banner.component';
     ListProductComponent,
     HomeComponent,
     BannerComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
