@@ -5,6 +5,8 @@ import { FooterComponent } from './shared/Client/footer/footer.component';
 import { HeaderComponent } from './shared/Client/header/header.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/Client/home/home.component';
+import { SigninComponent } from './pages/Client/signin/signin.component';
+import { SignupComponent } from './pages/Client/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -28,6 +30,15 @@ const routes: Routes = [
     path : 'header',
     component : HeaderComponent,
   },
+  {
+    path : 'signin',
+    component : SigninComponent,
+  },
+  {
+    path : 'signup',
+    component : SignupComponent,
+  },
+  
 ];
 
 @NgModule({

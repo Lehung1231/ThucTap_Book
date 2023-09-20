@@ -9,6 +9,8 @@ import { ListProductComponent } from './components/list-product/list-product.com
 import { HomeComponent } from './pages/Client/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { SigninComponent } from './pages/Client/signin/signin.component';
+import { SignupComponent } from './pages/Client/signup/signup.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     HomeComponent,
     BannerComponent,
     ProductDetailComponent,
+    SigninComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
