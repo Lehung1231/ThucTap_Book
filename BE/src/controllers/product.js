@@ -68,6 +68,7 @@ export const create = async (req, res) => {
       hot_sale,
       isNew,
       categoryId,
+      quantity,
     } = req.body;
 ;
 
@@ -86,6 +87,7 @@ export const create = async (req, res) => {
       hot_sale,
       isNew,
       categoryId,
+      quantity,
     });
 
     if (!product) {
