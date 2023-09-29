@@ -16,6 +16,7 @@ import { TagModule } from 'primeng/tag';
 import { CarouselModule } from 'primeng/carousel';
 import { InputTextModule } from 'primeng/inputtext';
 import { HttpClientModule } from '@angular/common/http';
+import { TestimonialsComponent } from './pages/Client/testimonials/testimonials.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     SigninComponent,
     SignupComponent,
     ProductsComponent,
+    TestimonialsComponent,
   ],
   imports: [
     BrowserModule,
