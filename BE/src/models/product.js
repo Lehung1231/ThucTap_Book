@@ -14,15 +14,15 @@ const productSchema = new Schema(
     description_short: String,
     isVisible: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     featured: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     isNew: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     hot_sale: {
       type: Number,
