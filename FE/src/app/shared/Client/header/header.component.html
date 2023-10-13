@@ -8,7 +8,7 @@
       class="container flex flex-col items-start justify-between p-6 mx-auto md:flex-row"
     >
       <a
-        class="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0"
+        class="flex items-center mb-4 mt-2 font-medium text-gray-900 title-font md:mb-0"
       >
         <svg
           class="w-auto h-5 text-gray-900 fill-current"
@@ -22,7 +22,7 @@
         </svg>
       </a>
       <nav
-        class="flex flex-wrap items-center justify-center pl-6 text-base border-l border-gray-200 md:mr-auto ml-6"
+        class="flex flex-wrap items-center justify-center pl-6 text-base border-l border-gray-200 md:mr-auto ml-6 mt-2"
       >
         <a href="#_" class="mr-5 font-medium hover:text-gray-900 ml-6">Home</a>
         <a href="#_" class="mr-5 font-medium hover:text-gray-900 ml-6">Cart</a>
@@ -30,7 +30,7 @@
       </nav>
       <!-- component -->
       <!-- This is an example component -->
-      <div class="relative mx-auto text-gray-600 mt-[-8px] mr-20">
+      <div class="relative mx-auto text-gray-600 mt-4 md:mt-0 md:mr-20">
         <input
           class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none w-96"
           type="search"
@@ -58,14 +58,17 @@
           </svg>
         </button>
       </div>
-      <div class="items-center h-full">
-        <a href="#_" class="mr-5 font-medium hover:text-gray-900">Login</a>
-        <a
-          href="#_"
-          class="px-4 py-2 text-xs font-bold text-white uppercase transition-all duration-150 bg-teal-500 rounded shadow outline-none active:bg-teal-600 hover:shadow-md focus:outline-none ease"
-        >
-          Sign Up
-        </a>
+      <div
+        class="items-center justify-center h-full md:items-center md:justify-end md:flex"
+      >
+        <div class="flex items-center mt-8 md:mt-0">
+          <a href="#_" class="font-medium hover:text-gray-900">Login</a>
+          <a
+            href="#_"
+            class="px-4 py-2 text-sm font-semibold text-white transition-all duration-300 bg-teal-500 rounded-full hover:bg-teal-600 hover:shadow-md focus:outline-none ease-in-out"
+            >Sign Up</a
+          >
+        </div>
       </div>
     </div>
   </header>
