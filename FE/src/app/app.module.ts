@@ -17,6 +17,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { InputTextModule } from 'primeng/inputtext';
 import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from './pages/Client/testimonials/testimonials.component';
+import { CartComponent } from './components/cart/cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { TestimonialsComponent } from './pages/Client/testimonials/testimonials.
     SignupComponent,
     ProductsComponent,
     TestimonialsComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
