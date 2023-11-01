@@ -50,4 +50,10 @@ export class ProductService {
       `http://localhost:8080/api/categorys/${id}`
     );
   }
+  addCategorys(category: ICategory): Observable<ICategory> {
+    return this.http.post<ICategory>(
+      'http://localhost:8080/api/categorys/',
+      category
+    );
+  }
 }
