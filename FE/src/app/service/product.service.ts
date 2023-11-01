@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Iproduct } from '../interface/product';
+import { ICategory } from '../interface/category';
 
 @Injectable({
   providedIn: 'root'
@@ -39,5 +40,9 @@ export class ProductService {
       'http://localhost:8080/api/products/',
       product
     );
+  }
+  //Category 
+  getCategorys(): Observable<ICategory[]> {
+    return this.http.get<ICategory[]>('http://localhost:8080/api/categorys');
   }
 }
