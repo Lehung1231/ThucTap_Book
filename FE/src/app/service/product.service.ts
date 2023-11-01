@@ -56,4 +56,9 @@ export class ProductService {
       category
     );
   }
+  deleteCategorys(id: number | string): Observable<ICategory> {
+    return this.http.delete<ICategory>(
+      'http://localhost:8080/api/categorys/' + id
+    );
+  }
 }
