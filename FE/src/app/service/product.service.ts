@@ -61,4 +61,28 @@ export class ProductService {
       'http://localhost:8080/api/categorys/' + id
     );
   }
+  updateCategorys(
+    category: ICategory,
+    _id: number | string
+  ): Observable<ICategory> {
+    return this.http.put<ICategory>(
+      'http://localhost:8080/api/categorys/' + _id,
+      category
+    );
+  }
+  editPatchCategorys(category: ICategory): Observable<ICategory> {
+    return this.http.patch<ICategory>(
+      'http://localhost:8080/api/categorys/' + category._id,
+      category
+    );
+  }
+  editCategorys(
+    id: number | string,
+    category: ICategory
+  ): Observable<ICategory> {
+    return this.http.put<ICategory>(
+      'http://localhost:8080/api/categorys/' + id,
+      category
+    );
+  }
 }
