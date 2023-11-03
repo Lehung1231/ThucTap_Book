@@ -41,6 +41,12 @@ export class ProductService {
       product
     );
   }
+  editPatchProduct(product: Iproduct): Observable<Iproduct> {
+    return this.http.patch<Iproduct>(
+      'http://localhost:8080/api/products/' + product._id,
+      product
+    );
+  }
   //Category 
   getCategorys(): Observable<ICategory[]> {
     return this.http.get<ICategory[]>('http://localhost:8080/api/categorys');
