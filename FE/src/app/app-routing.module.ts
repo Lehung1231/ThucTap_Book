@@ -19,10 +19,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
-  {
-    path : 'detail',
-    component : ProductDetailComponent,
-  },
+  { path: 'products/:id', component: ProductDetailComponent },
   {
     path : 'footer',
     component : FooterComponent,
