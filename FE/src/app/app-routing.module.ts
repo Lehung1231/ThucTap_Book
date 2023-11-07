@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/Client/home/home.component';
 import { SigninComponent } from './pages/Client/signin/signin.component';
 import { SignupComponent } from './pages/Client/signup/signup.component';
 import { CartComponent } from './components/cart/cart.component';
+import { NotFoundComponent } from './pages/Client/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
   },
   { path: 'products/:id', component: ProductDetailComponent },
   {

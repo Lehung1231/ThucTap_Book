@@ -18,6 +18,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from './pages/Client/testimonials/testimonials.component';
 import { CartComponent } from './components/cart/cart.component';
+import { NotFoundComponent } from './pages/Client/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { CartComponent } from './components/cart/cart.component';
     ProductsComponent,
     TestimonialsComponent,
     CartComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
