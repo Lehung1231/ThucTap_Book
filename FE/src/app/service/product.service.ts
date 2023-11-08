@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Iproduct } from '../interface/product';
 import { ICategory } from '../interface/category';
-import { signup } from '../interface/user';
+import { signin, signup } from '../interface/user';
 
 @Injectable({
   providedIn: 'root'
@@ -119,6 +119,9 @@ export class ProductService {
   //user
   register(user: signup): Observable<signup> {
     return this.http.post<signup>('http://localhost:8080/api/signup', user);
+  }
+  login(user: signin): Observable<signin> {
+    return this.http.post<signin>('http://localhost:8080/api/signin', user);
   }
 }
   
