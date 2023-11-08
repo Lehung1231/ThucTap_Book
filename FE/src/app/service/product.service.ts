@@ -126,6 +126,9 @@ export class ProductService {
   getUsers(): Observable<signin[]> {
     return this.http.get<signin[]>('http://localhost:8080/api/user');
   }
+  deleteUser(id: number | string): Observable<signin> {
+    return this.http.delete<signin>('http://localhost:8080/api/user/' + id);
+  }
 }
   
   
