@@ -123,6 +123,9 @@ export class ProductService {
   login(user: signin): Observable<signin> {
     return this.http.post<signin>('http://localhost:8080/api/signin', user);
   }
+  getUsers(): Observable<signin[]> {
+    return this.http.get<signin[]>('http://localhost:8080/api/user');
+  }
 }
   
   
