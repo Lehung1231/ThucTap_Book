@@ -6,3 +6,7 @@ export interface signup {
     confirmPassword :string;
     image_url :string;
     }
+export interface signin {
+        name : string;
+        email : string;
+    }
