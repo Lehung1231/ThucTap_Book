@@ -10,6 +10,7 @@ import { SignupComponent } from './pages/Client/signup/signup.component';
 import { CartComponent } from './components/cart/cart.component';
 import { NotFoundComponent } from './pages/Client/not-found/not-found.component';
 import { ListProductComponent } from './components/list-product/list-product.component';
+import { ProductAddComponent } from './components/Admin/product/product-add/product-add.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'products', component: ListProductComponent },
+      { path: 'products/add', component: ProductAddComponent },
     ],
   },
 ];
