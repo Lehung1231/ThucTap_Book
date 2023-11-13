@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from './pages/Client/testimonials/testimonials.component';
 import { CartComponent } from './components/cart/cart.component';
 import { NotFoundComponent } from './pages/Client/not-found/not-found.component';
+import { ProductComponent } from './components/Admin/product/product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { NotFoundComponent } from './pages/Client/not-found/not-found.component'
     TestimonialsComponent,
     CartComponent,
     NotFoundComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
