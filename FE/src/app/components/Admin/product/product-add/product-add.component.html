@@ -174,61 +174,6 @@
     >
     <p-rating formControlName="rating"></p-rating>
   </div>
-  <!-- color  -->
-  <div class="mb-6">
-    <label
-      for="success"
-      class="block mb-2 text-sm font-medium dark:text-green-500"
-    >
-      Color</label
-    >
-    <div class="">
-      <p-multiSelect
-        formControlName="color"
-        [options]="colors"
-        optionLabel="name"
-      ></p-multiSelect>
-    </div>
-    <!-- validate show -->
-    <div
-      *ngIf="
-        productForm.get('color')?.hasError('required') &&
-        (productForm.get('color')?.dirty ||
-          productForm.get('color')?.touched ||
-          submitted)
-      "
-      class="text-red-500 text-xs mt-1"
-    >
-      Color is required.
-    </div>
-  </div>
-  <!-- size  -->
-  <div class="mb-6 w-full">
-    <label
-      for="success"
-      class="block mb-2 text-sm font-medium dark:text-green-500"
-    >
-      Size</label
-    >
-    <p-multiSelect
-      class="w-full"
-      [options]="sizes"
-      optionLabel="name"
-      formControlName="size"
-    ></p-multiSelect>
-    <!-- validate show -->
-    <div
-      *ngIf="
-        productForm.get('size')?.hasError('required') &&
-        (productForm.get('size')?.dirty ||
-          productForm.get('size')?.touched ||
-          submitted)
-      "
-      class="text-red-500 text-xs mt-1"
-    >
-      Size is required.
-    </div>
-  </div>
   <!-- category  -->
   <div class="mb-6">
     <label
