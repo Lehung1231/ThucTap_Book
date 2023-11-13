@@ -20,6 +20,7 @@ import { TestimonialsComponent } from './pages/Client/testimonials/testimonials.
 import { CartComponent } from './components/cart/cart.component';
 import { NotFoundComponent } from './pages/Client/not-found/not-found.component';
 import { ProductComponent } from './components/Admin/product/product.component';
+import { ProductAddComponent } from './components/Admin/product/product-add/product-add.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { ProductComponent } from './components/Admin/product/product.component';
     CartComponent,
     NotFoundComponent,
     ProductComponent,
+    ProductAddComponent,
   ],
   imports: [
     BrowserModule,
