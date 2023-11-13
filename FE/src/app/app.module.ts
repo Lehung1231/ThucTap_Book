@@ -21,6 +21,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { NotFoundComponent } from './pages/Client/not-found/not-found.component';
 import { ProductComponent } from './components/Admin/product/product.component';
 import { ProductAddComponent } from './components/Admin/product/product-add/product-add.component';
+import { ProductEditComponent } from './components/Admin/product/product-edit/product-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { ProductAddComponent } from './components/Admin/product/product-add/prod
     NotFoundComponent,
     ProductComponent,
     ProductAddComponent,
+    ProductEditComponent,
   ],
   imports: [
     BrowserModule,

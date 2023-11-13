@@ -25,6 +25,12 @@ export class ProductService {
       product
     );
   }
+  editProduct(id: number | string, product: Iproduct): Observable<Iproduct> {
+    return this.http.put<Iproduct>(
+      'http://localhost:8080/api/products/' + id,
+      product
+    );
+  }
   updateProduct(product: Iproduct): Observable<Iproduct> {
     return this.http.put<Iproduct>(
       'http://localhost:8080/api/products/' + product._id,
