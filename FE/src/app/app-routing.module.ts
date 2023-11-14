@@ -12,6 +12,7 @@ import { NotFoundComponent } from './pages/Client/not-found/not-found.component'
 import { ListProductComponent } from './components/list-product/list-product.component';
 import { ProductAddComponent } from './components/Admin/product/product-add/product-add.component';
 import { CategoyComponent } from './components/Admin/category/list-category/list-category.component';
+import { CategoyAddComponent } from './components/Admin/category/category-add/category-add.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,7 @@ const routes: Routes = [
       { path: 'products', component: ListProductComponent },
       { path: 'products/add', component: ProductAddComponent },
       { path: 'categorys', component: CategoyComponent },
+      { path: 'categorys/add', component: CategoyAddComponent },
     ],
   },
 ];

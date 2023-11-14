@@ -23,6 +23,7 @@ import { ProductComponent } from './components/Admin/product/product.component';
 import { ProductAddComponent } from './components/Admin/product/product-add/product-add.component';
 import { ProductEditComponent } from './components/Admin/product/product-edit/product-edit.component';
 import { ListCategoryComponent } from './components/Admin/category/list-category/list-category.component';
+import { CategoryAddComponent } from './components/Admin/category/category-add/category-add.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import { ListCategoryComponent } from './components/Admin/category/list-category
     ProductAddComponent,
     ProductEditComponent,
     ListCategoryComponent,
+    CategoryAddComponent,
   ],
   imports: [
     BrowserModule,
