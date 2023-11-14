@@ -24,6 +24,7 @@ import { ProductAddComponent } from './components/Admin/product/product-add/prod
 import { ProductEditComponent } from './components/Admin/product/product-edit/product-edit.component';
 import { ListCategoryComponent } from './components/Admin/category/list-category/list-category.component';
 import { CategoryAddComponent } from './components/Admin/category/category-add/category-add.component';
+import { CategoryEditComponent } from './components/Admin/category/category-edit/category-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +45,7 @@ import { CategoryAddComponent } from './components/Admin/category/category-add/c
     ProductEditComponent,
     ListCategoryComponent,
     CategoryAddComponent,
+    CategoryEditComponent,
   ],
   imports: [
     BrowserModule,

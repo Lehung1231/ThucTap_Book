@@ -13,6 +13,7 @@ import { ListProductComponent } from './components/list-product/list-product.com
 import { ProductAddComponent } from './components/Admin/product/product-add/product-add.component';
 import { CategoyComponent } from './components/Admin/category/list-category/list-category.component';
 import { CategoyAddComponent } from './components/Admin/category/category-add/category-add.component';
+import { CategoyEditComponent } from './components/Admin/category/category-edit/category-edit.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,7 @@ const routes: Routes = [
       { path: 'products/add', component: ProductAddComponent },
       { path: 'categorys', component: CategoyComponent },
       { path: 'categorys/add', component: CategoyAddComponent },
+      { path: 'categorys/edit/:id', component: CategoyEditComponent },
     ],
   },
 ];
