@@ -22,6 +22,7 @@ import { NotFoundComponent } from './pages/Client/not-found/not-found.component'
 import { ProductComponent } from './components/Admin/product/product.component';
 import { ProductAddComponent } from './components/Admin/product/product-add/product-add.component';
 import { ProductEditComponent } from './components/Admin/product/product-edit/product-edit.component';
+import { ListCategoryComponent } from './components/Admin/category/list-category/list-category.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { ProductEditComponent } from './components/Admin/product/product-edit/pr
     ProductComponent,
     ProductAddComponent,
     ProductEditComponent,
+    ListCategoryComponent,
   ],
   imports: [
     BrowserModule,
